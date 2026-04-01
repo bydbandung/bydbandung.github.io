@@ -75,7 +75,7 @@ const motors = [
     link: "byd-sealion7-premium/"
   },
   {
-    name: "BYD Sealion 7 (Performance AWD)",
+    name: "BYD Sealion 7 (Performance)",
     price: "Rp719.000.000",
     img: "aset/byd2-sealion7",
     category: "matic",
