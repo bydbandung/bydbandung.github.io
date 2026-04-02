@@ -77,7 +77,7 @@ const motors = [
   {
     name: "BYD Sealion 7 (Performance)",
     price: "Rp719.000.000",
-    img: "aset/byd2-sealion7.png",
+    img: "https://cdn.virtualyard.com.au/75df63609809c7a2052fdffe5c00a84e/2c229a16a91c75765f5b75c0997baf31/models/sealion-7/tech-specs.png?v=1",
     category: "matic",
     new: true,
     link: "byd-sealion7-performance/"
