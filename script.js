@@ -251,3 +251,44 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+// Banner header
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+const dotsContainer = document.querySelector(".dots");
+
+slides.forEach((_, i) => {
+  let dot = document.createElement("span");
+  dot.addEventListener("click", () => showSlide(i));
+  dotsContainer.appendChild(dot);
+});
+
+const dots = document.querySelectorAll(".dots span");
+
+function showSlide(i) {
+  index = i;
+  document.querySelector(".slides").style.transform = `translateX(-${i * 100}%)`;
+
+  dots.forEach(d => d.classList.remove("active"));
+  dots[i].classList.add("active");
+}
+
+document.querySelector(".next").onclick = () => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+};
+
+document.querySelector(".prev").onclick = () => {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+};
+
+function autoSlide() {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
+
+setInterval(autoSlide, 5000);
+
+// init
+showSlide(0);
