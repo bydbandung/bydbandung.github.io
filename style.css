@@ -391,21 +391,6 @@ footer small {
   border-radius: 12px;
 }
 
-/* tombol */
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.4);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
 
 /* dots */
 .dots {
