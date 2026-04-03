@@ -252,11 +252,12 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// Banner header
 let index = 0;
 const slides = document.querySelectorAll(".slide");
+const slideContainer = document.querySelector(".slides");
 const dotsContainer = document.querySelector(".dots");
 
+// dots
 slides.forEach((_, i) => {
   let dot = document.createElement("span");
   dot.addEventListener("click", () => showSlide(i));
@@ -267,28 +268,36 @@ const dots = document.querySelectorAll(".dots span");
 
 function showSlide(i) {
   index = i;
-  document.querySelector(".slides").style.transform = `translateX(-${i * 100}%)`;
+  slideContainer.style.transform = `translateX(-${i * 100}%)`;
 
   dots.forEach(d => d.classList.remove("active"));
   dots[i].classList.add("active");
 }
 
-document.querySelector(".next").onclick = () => {
+// auto slide
+setInterval(() => {
   index = (index + 1) % slides.length;
   showSlide(index);
-};
+}, 5000);
 
-document.querySelector(".prev").onclick = () => {
-  index = (index - 1 + slides.length) % slides.length;
+// swipe support (HP)
+let startX = 0;
+
+slideContainer.addEventListener("touchstart", e => {
+  startX = e.touches[0].clientX;
+});
+
+slideContainer.addEventListener("touchend", e => {
+  let endX = e.changedTouches[0].clientX;
+
+  if (startX - endX > 50) {
+    index = (index + 1) % slides.length;
+  } else if (endX - startX > 50) {
+    index = (index - 1 + slides.length) % slides.length;
+  }
+
   showSlide(index);
-};
-
-function autoSlide() {
-  index = (index + 1) % slides.length;
-  showSlide(index);
-}
-
-setInterval(autoSlide, 5000);
+});
 
 // init
 showSlide(0);
