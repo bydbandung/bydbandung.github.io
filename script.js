@@ -278,7 +278,7 @@ function showSlide(i) {
 setInterval(() => {
   index = (index + 1) % slides.length;
   showSlide(index);
-}, 5000);
+}, 7000);
 
 // swipe support (HP)
 let startX = 0;
