@@ -21,7 +21,7 @@ const motors = [
   {
     name: "BYD Dolphin (Dynamic)",
     price: "Rp369.000.000",
-    img: "https://byd.arista-group.co.id/wp-content/uploads/2024/09/Surf-Blue-e1733456828574.png",
+    img: "https://i.ibb.co.com/fG1PXffh/20260405-114646.png",
     category: "matic",
     new: true,
     link: "byd-dolphin-dynamic/"
