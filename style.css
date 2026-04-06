@@ -10,7 +10,7 @@ body {
 /* === Header === */
 header {
   text-align: center;
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid #1339c2;
   padding: 8px 0;
 }
 header img {
@@ -174,7 +174,6 @@ footer {
   background: #111;
   color: #fff;
   padding: 40px 5vw 25px;
-  border-top: 3px solid #e60012;
   font-family: 'Arial', sans-serif;
   width: 100%;
   box-sizing: border-box;
