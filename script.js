@@ -37,7 +37,7 @@ const motors = [
   {
     name: "BYD M6 (Standard)",
     price: "Rp383.000.000",
-    img: "https://byd.arista-group.co.id/wp-content/uploads/2024/12/Khaki.png",
+    img: "https://i.ibb.co.com/C5yJkpst/ezgif-24b295284166dc77.webp",
     category: "matic",
     new: true,
     link: "byd-m6-standard/"
