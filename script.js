@@ -13,7 +13,7 @@ const motors = [
   {
     name: "BYD Atto 1 (Premium)",
     price: "Rp235.000.000",
-    img: "https://eu-central.storage.cloudconvert.com/tasks/26b0bbdc-a2f9-41c1-99ac-18eec5638091/184762.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20260407%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20260407T132528Z&X-Amz-Expires=86400&X-Amz-Signature=48c3510dc7c6e498f5ea3f1d9bd51f6cab25429a1dbe1589f396608032982ce8&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%3D%22184762.webp%22&response-content-type=image%2Fwebp&x-id=GetObject",
+    img: "https://i.ibb.co.com/Z6hNhZn5/184762.webp",
     category: "matic",
     new: true,
     link: "byd-atto-1premium/"
