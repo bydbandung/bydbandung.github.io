@@ -13,7 +13,7 @@ const motors = [
   {
     name: "BYD Atto 1 (Premium)",
     price: "Rp235.000.000",
-    img: "https://i.ibb.co.com/Z6hNhZn5/184762.webp",
+    img: "https://byd.arista-group.co.id/wp-content/uploads/2025/07/Atto-1-Sprout-Green-1.png",
     category: "matic",
     new: true,
     link: "byd-atto-1premium/"
@@ -21,8 +21,7 @@ const motors = [
   {
     name: "BYD Dolphin (Dynamic)",
     price: "Rp369.000.000",
-    img: "
-          ",
+    img: "https://i.ibb.co.com/Z6hNhZn5/184762.webp",
     category: "matic",
     new: true,
     link: "byd-dolphin-dynamic/"
