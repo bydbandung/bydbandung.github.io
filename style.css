@@ -271,58 +271,53 @@ footer small {
   color: #aaa;
 }
 
-/* === Tombol WhatsApp Melayang === */
-/* Container Utama Tombol WA */
+/* --- TOMBOL WHATSAPP FLOATING --- */
+
 .whatsapp-float {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 25px; /* Jarak dari bawah */
-  right: 25px;  /* Jarak dari kanan */
-  background-color: #25d366;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366; /* Hijau khas WA */
   border-radius: 50%;
-  display: flex !important; /* Memaksa logo di tengah */
+  display: flex !important; /* Memaksa isi di tengah */
   justify-content: center !important;
   align-items: center !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   z-index: 9999;
   transition: all 0.3s ease;
-  animation: pulse-green 2s infinite; /* Efek denyut modern */
   text-decoration: none;
+  cursor: pointer;
 }
 
-/* Ukuran & Posisi Logo WA di Dalam */
-.whatsapp-float img {
-  width: 32px !important;    /* Ukuran pas, tidak terlalu besar/kecil */
-  height: 32px !important;
-  display: block !important;
-  object-fit: contain !important;
-  filter: brightness(0) invert(1); /* Membuat logo jadi putih bersih */
-  margin: 0 !important;
-  padding: 0 !important;
+/* Mengatur Ikon SVG di Dalamnya */
+.whatsapp-float svg {
+  width: 32px !important; /* Ukuran ikon yang pas */
+  height: auto;
+  fill: white !important; /* Memaksa warna ikon jadi putih bersih */
+  display: block;
 }
 
-/* Efek Hover (Saat Disentuh/Kursor Diatasnya) */
+/* Efek saat tombol disentuh atau kursor di atasnya */
 .whatsapp-float:hover {
   transform: scale(1.1);
-  background-color: #128c7e; /* Warna hijau lebih gelap saat di-hover */
+  background-color: #128c7e; /* Hijau lebih gelap saat aktif */
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
-/* Animasi Denyut (Pulse) Agar Menarik Perhatian */
+/* Efek Denyut (Pulse) Halus - Opsional tapi Keren */
 @keyframes pulse-green {
-  0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-  }
-  70% {
-    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-  }
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
-/* Penyesuaian untuk Layar Kecil (HP) */
+.whatsapp-float {
+  animation: pulse-green 2s infinite;
+}
+
+/* Penyesuaian Otomatis untuk Layar HP */
 @media screen and (max-width: 768px) {
   .whatsapp-float {
     width: 55px;
@@ -330,12 +325,10 @@ footer small {
     bottom: 20px;
     right: 20px;
   }
-  .whatsapp-float img {
+  .whatsapp-float svg {
     width: 28px !important;
-    height: 28px !important;
   }
 }
-
 
 .spesifikasi-tab {
   background: #333;
