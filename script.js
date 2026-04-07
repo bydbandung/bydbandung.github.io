@@ -21,7 +21,7 @@ const motors = [
   {
     name: "BYD Dolphin (Dynamic)",
     price: "Rp369.000.000",
-    img: "https://i.ibb.co.com/fG1PXffh/20260405-114646.png",
+    img: "https://data-cdn.euroncap.com/media/assessment-media/51c10d51-c237-4880-8e28-1ad46b997d1d/BYD_DOLPHIN_2023__a66d1d834104ddad_xl.webp",
     category: "matic",
     new: true,
     link: "byd-dolphin-dynamic/"
