@@ -330,6 +330,78 @@ footer small {
   }
 }
 
+/* --- POP-UP HANYA FOTO --- */
+
+/* Overlay Latar Belakang Gelap */
+.popup-overlay-foto {
+    display: none; /* Awalnya sembunyi */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Lebih gelap agar foto menonjol */
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.4s ease;
+}
+
+/* Wadah Konten (Mengikuti ukuran foto) */
+.popup-content-foto {
+    position: relative;
+    width: 90%;
+    max-width: 500px; /* Ukuran maksimal lebar foto */
+    border-radius: 10px;
+    overflow: hidden; /* Agar sudut foto melengkung sesuai wadah */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Mengatur Foto di Dalam */
+.promo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.promo-img:hover {
+    transform: scale(1.02); /* Efek zoom halus saat di-hover */
+}
+
+/* Tombol Close (X) Putih di Atas Foto */
+.close-btn-foto {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white; /* Warna putih agar terlihat di atas foto */
+    cursor: pointer;
+    z-index: 10001;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.5); /* Shadow agar teks jelas */
+}
+
+.close-btn-foto:hover {
+    color: #ff4d4d; /* Merah saat di-hover */
+}
+
+/* Animasi Muncul */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Penyesuaian untuk Layar Kecil (HP) */
+@media screen and (max-width: 768px) {
+    .popup-content-foto {
+        width: 85%;
+        max-width: 350px;
+    }
+}
+
+
 .spesifikasi-tab {
   background: #333;
   color: #fff;
