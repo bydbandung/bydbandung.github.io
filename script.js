@@ -61,7 +61,7 @@ const motors = [
   {
     name: "BYD Atto 3 (Superior)",
     price: "Rp520.000.000",
-    img: "https://byd.arista-group.co.id/wp-content/uploads/2024/01/Atto-3-.png",
+    img: "https://i.ibb.co.com/23pz1wr1/ezgif-22684ff4a5d743d7.webp",
     category: "matic",
     new: true,
     link: "byd-atto3-superior/"
@@ -69,7 +69,7 @@ const motors = [
   {
     name: "BYD Sealion 7 (Premium)",
     price: "Rp629.000.000",
-    img: "https://www.reverautomotive.com/images/model/sealion7/tech-spec/sealion7-shark-grey.png",
+    img: "https://i.ibb.co.com/S4pZJT7h/ezgif-29ad500ffecbdd0a.webp",
     category: "matic",
     new: true,
     link: "byd-sealion7-premium/"
