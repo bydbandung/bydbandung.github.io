@@ -13,7 +13,7 @@ const motors = [
   {
     name: "BYD Atto 1 (Premium)",
     price: "Rp235.000.000",
-    img: "https://byd.arista-group.co.id/wp-content/uploads/2025/07/Atto-1-Cosmos-Black.png",
+    img: "https://eu-central.storage.cloudconvert.com/tasks/26b0bbdc-a2f9-41c1-99ac-18eec5638091/184762.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20260407%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20260407T132528Z&X-Amz-Expires=86400&X-Amz-Signature=48c3510dc7c6e498f5ea3f1d9bd51f6cab25429a1dbe1589f396608032982ce8&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%3D%22184762.webp%22&response-content-type=image%2Fwebp&x-id=GetObject",
     category: "matic",
     new: true,
     link: "byd-atto-1premium/"
@@ -21,7 +21,8 @@ const motors = [
   {
     name: "BYD Dolphin (Dynamic)",
     price: "Rp369.000.000",
-    img: "https://data-cdn.euroncap.com/media/assessment-media/51c10d51-c237-4880-8e28-1ad46b997d1d/BYD_DOLPHIN_2023__a66d1d834104ddad_xl.webp",
+    img: "
+          ",
     category: "matic",
     new: true,
     link: "byd-dolphin-dynamic/"
