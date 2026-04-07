@@ -29,7 +29,7 @@ const motors = [
   {
     name: "BYD Dolphin (Premium)",
     price: "Rp429.000.000",
-    img: "https://byd.arista-group.co.id/wp-content/uploads/2024/09/Urban-Grey-e1733456997414.png",
+    img: "https://i.ibb.co.com/DDKFd65L/20260407-191541.png",
     category: "matic",
     new: true,
     link: "byd-dolphin-premium/"
